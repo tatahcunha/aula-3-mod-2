@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>javaScript classe e metódo</h2>
+    <p>passar o parâmetro idade</p>
+    <p id="demo"></p>
+    <script>
+        class Car {
+            constructor(nome, year) {
+                this.nome = nome;
+                this.year = year;
+            }
+            age(x) {
+                return x - this.year;
+            }
+        }
+        let date = new Date();
+        let year = date.getFullYear();
+        let myCar = new Car ("Ford", 2014);
+        document.getElementById("demo").innerHTML="A marca do meu carro é " + myCar.nome+" e tem " + myCar.age(year)+ " anos de uso";
+    </script>
+</body>
+</html>

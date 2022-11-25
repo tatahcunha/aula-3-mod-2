@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>javaScript Getters eSetters</h2>
+    <p>Criar contador</p>
+    <p id="contador"></p>
+    <script>
+        // Define os objetos
+        const obj = {
+            cont: 0
+        };
+        // define os setters e getters
+        Object.defineProperty(obj,"reset",{
+            get: function() {
+                this.cont=0;
+            }
+        });
+        Object.defineProperty(obj, "increment",{
+            get: function(){
+                this.cont--;
+            }
+        })
+
+        Object.defineProperty(obj, "decremente",{
+            get: function(){
+            this.cont--;
+            }
+        })
+        Object.defineProperty(obj, "add", {
+            set: function (value){
+                this.cont += value;
+            }
+        })
+        Object.defineProperty(obj, "substract", {
+            set: function(value) {
+                this.cont -= value;
+            }
+        });
+
+        obj.reset;
+        obj.add;
+        obj.subtract = 1
+        obj.increment;
+        obj.decrement;
+        document.getElementById("contador").innerHTML = obj.cont
+    </script>
+</body>
+</html>
