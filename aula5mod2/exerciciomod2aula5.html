@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>verificar se é par ou ímpar</title>
+</head>
+<body>
+    <p>Verificar se é par ou ímpar</p>
+    <input id="demo" type="text">
+    <button type="button" onclick="myFunction()"> teste </button>
+    <p id="p01"></p>
+    <script>
+        function myFunction() {
+            const message = document.getElementById("p01");
+            message.innerHTML - "";
+            let x = document.getElementById("demo").value;
+            try {
+                x = Number(x);
+                if(x == "") throw "vazio";
+                if(isNaN(x)) throw "valor inválido. Digite um número!";
+                if(x % 2 === 0) {
+                    throw "par";
+                 } else {
+                    throw "ímpar";
+                 }
+            }
+            catch(err){
+                message.innerHTML = "Mensagem: " + err;
+            }
+        }
+    </script>
+
+</body>
+</html>
