@@ -1,0 +1,23 @@
+https://senac-pc.resilia.work/content/show/47/79/42
+https://blog.nubank.com.br/programacao-funcional-o-que-e-relacao-nubank/
+https://sergiocosta.medium.com/paradigma-funcional-3194924a8d20
+https://pt.wikipedia.org/wiki/Programa%C3%A7%C3%A3o_funcional
+https://developer.mozilla.org/pt-BR/docs/Glossary/Hoisting
+https://www.alura.com.br/artigos/hoisting-no-javascript
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Closures
+
+
+Qual o hoby incomum de vocês
+
+Aula passada falamos de herança e polimorfismo
+
+hoisting
+
+por mais que seja içada a variável cursor é apenas declarada7
+
+array o que são?
+como declaramos?
+como adicionamos?
+como acessamos?
+Map
+um mapeamento transformação sera feito com base no callback
